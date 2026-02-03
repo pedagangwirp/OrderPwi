@@ -1414,7 +1414,7 @@ body{
         <strong style="color:var(--gold)">Pastikan Anda Sudah Gabung Discord Pedagang!</strong><br>
         <span style="font-size:13px;color:var(--dim)">
           Gabung Discord untuk melihat status pesanan dan update order makanan Anda.<br>
-          Klik tombol <a href="https://discord.gg/ZBP83dEb4Y" target="_blank" style="color:var(--gold);font-weight:700;text-decoration:underline;transition:all 0.2s" onmouseover="this.style.color='var(--gold2)'" onmouseout="this.style.color='var(--gold)'"><strong>"Discord Pedagang"</strong></a> di atas untuk bergabung.
+          Klik tombol <a href="https://discord.gg/ZBP83dEb4Y" target="_blank" style="color:var(--gold);font-weight:700;text-decoration:underline;transition:all 0.2s" onmouseover="this.style.color='var(--gold2)'" onmouseout="this.style.color='var(--gold)'"><strong>"Discord Pedagang"</strong></a> di samping untuk bergabung.
         </span>
       </div>
     </div>
@@ -1574,7 +1574,7 @@ body{
   <div class="payment-notice">
     <span class="notice-icon">⚠️</span>
     <div class="notice-text">
-      <strong>Wajib Menemui Petinggi untuk Pembayaran</strong><br>
+      <strong>Wajib Menemui Petinggi/handle order Pedagang untuk Pembayaran</strong><br>
       <span>Silakan menemui petinggi atau yang handle Pedagang untuk melakukan pembayaran terlebih dahulu sebelum pesanan diantar/diambil</span>
     </div>
   </div>
@@ -1589,12 +1589,12 @@ body{
     <div class="cod-card" data-cod="Bayar ke Petinggi + Diantar">
       <div class="cod-ico">🚚</div>
       <div class="cod-name">Bayar & Antar</div>
-      <div class="cod-sub">Temui petinggi, lalu diantar</div>
+      <div class="cod-sub">Bayar di lounge, kami antar ke lokasi</div>
     </div>
     <div class="cod-card" data-cod="Bayar ke Petinggi + Ambil Sendiri">
       <div class="cod-ico">🏃</div>
       <div class="cod-name">Bayar & Ambil</div>
-      <div class="cod-sub">Temui petinggi, ambil sendiri</div>
+      <div class="cod-sub">Bayar di lounge, ambil sendiri</div>
     </div>
   </div>
 </div>
@@ -2173,7 +2173,7 @@ document.getElementById('sbtn').addEventListener('click', function(){
   
   embed.fields.push({name:'\u200B', value:'\u200B', inline:true});
   embed.fields.push({name:'📦 Paket Dibeli', value:lines.join('\n'), inline:false});
-  embed.fields.push({name:'💰 Total Harga', value:'### '+fmtPrice(total), inline:true});
+  embed.fields.push({name:'💰 Total Harga', value:' '+fmtPrice(total), inline:true});
   embed.fields.push({name:'🚗 Metode', value:codPick, inline:true});
   
   if(note){
